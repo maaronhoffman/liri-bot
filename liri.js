@@ -90,7 +90,7 @@ function getConcert(artist) {
         
         fs.readFile("random.txt", "utf8", function (err, data) {
         console.log(data);
-        data = data.toString();
+        data = data.toString().split(',');
         console.log(data);
         var command= data[0];
         var info = data[1];
