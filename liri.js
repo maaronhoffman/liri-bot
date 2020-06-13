@@ -79,7 +79,7 @@ function getConcert(artist) {
         console.log(error);
       });
     
-      if (movieName === "Mr. Nobody") {
+      if (movieName === "") {
         
         console.log("If you haven't watched 'Mr. Nobody,' then you should: http://www.imdb.com/title/tt0485947/");
         console.log("It's on Netflix!");
