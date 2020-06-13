@@ -51,7 +51,6 @@ function getSpotify(trackTitle) {
 function getConcert(artist) {
     axios.get("https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp")
       .then(function (response) {
-        console.log(response.data[0]);
         var concertDate = moment(response.data[0].datetime).format('MM/DD/YYYY');
         console.log("Venue:", response.data[0].venue.name);
         console.log("City:", response.data[0].venue.city);
